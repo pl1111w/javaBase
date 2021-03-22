@@ -10,7 +10,7 @@ import java.util.List;
  * @author: Kris
  * @date 2021/3/7 19:41
  */
-public class GoOverHead {
+public class GCOverHead {
 
     public static void main(String[] args) {
         int i = 0;
