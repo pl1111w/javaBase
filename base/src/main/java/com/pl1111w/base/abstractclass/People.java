@@ -22,6 +22,6 @@ public class People extends Animal{
         return "8h";
     }
     static void eat(Fish fish){
-        System.out.println("eat fish");
+        System.out.println("eat"+fish.type);
     }
 }

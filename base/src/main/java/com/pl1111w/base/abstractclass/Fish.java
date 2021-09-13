@@ -6,7 +6,11 @@ package com.pl1111w.base.abstractclass;
  * @author: Kris
  * @date 2021/9/13 23:25
  */
-public class Fish extends Animal{
+public class Fish extends Animal {
+    public Fish(String type) {
+        this.type = type;
+    }
+
     @Override
     String eat() {
         return "藻类";

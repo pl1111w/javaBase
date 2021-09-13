@@ -9,7 +9,7 @@ package com.pl1111w.base.abstractclass;
 public class TestAbstract {
 
     public static void main(String[] args) {
-        Animal animal = new Fish() {
+        Animal animal = new Fish("咸鱼") {
             @Override
             String eat() {
                 return "eat";
@@ -30,7 +30,7 @@ public class TestAbstract {
         System.out.println(animal.breath());
 
        People people = new People();
-       people.eat(new Fish());//匿名对象
+       people.eat(new Fish("鱿鱼"));//匿名对象
        people.eat();
     }
 }
