@@ -9,7 +9,7 @@ package com.pl1111w.base.abstractclass;
 public class TestAbstract {
 
     public static void main(String[] args) {
-        Animal animal = new Fish("咸鱼") {
+        Animal animal = new Animal() { //匿名子类对象 可能是fish,person
             @Override
             String eat() {
                 return "eat";
