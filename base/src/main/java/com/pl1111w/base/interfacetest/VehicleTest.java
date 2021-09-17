@@ -1,5 +1,6 @@
 package com.pl1111w.base.interfacetest;
 
+import com.pl1111w.base.interfacetest.car.AudiCar;
 import com.pl1111w.base.interfacetest.car.AudiFactory;
 import com.pl1111w.base.interfacetest.car.BMWCar;
 import com.pl1111w.base.interfacetest.plan.Plane;
@@ -21,6 +22,11 @@ public class VehicleTest {
 
         Vehicle vehicle = new AudiFactory().getCar();
         System.out.println(vehicle.vehicleType());
+
+        //jdk8
+        AudiCar car = new AudiCar();
+        car.defaultMethod();//调用接口默认方法
+        //car.print();//不能调用接口静态方法
     }
 
     private static void getSpeed(Vehicle vehicle) {

@@ -2,7 +2,7 @@ package com.pl1111w.base.interfacetest;
 
 /**
  * @title: pl1111w
- * @description:
+ * @description: jdk7:接口只能定义静态常量 跟抽象方法
  * @author: Kris
  * @date 2021/9/16 17:30
  */
