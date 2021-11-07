@@ -2,6 +2,8 @@ package com.pl1111w.base.jvm.stringType;
 
 import jdk.swing.interop.SwingInterOpUtils;
 
+import java.util.Locale;
+
 /**
  * @title: pl1111w
  * @description: 常量与常量拼接的结果在常量池中只有一份，常量与变量拼接的结果在堆中，intern()方法指向常量池中的常量
@@ -82,5 +84,10 @@ public class StringDemo {
         Character character4 = '。';
         System.out.println(character1==character2);
         System.out.println(character3==character4);
+
+        String string = new String("123q");
+        string.toUpperCase();
+        System.out.println(string.toUpperCase());
+        System.out.println(string);
     }
 }
