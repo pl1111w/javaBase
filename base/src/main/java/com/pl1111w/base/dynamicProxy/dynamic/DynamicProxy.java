@@ -23,9 +23,11 @@ public class DynamicProxy {
 class ProxyFactory {
 
 
+
     public static Object getProxyInstance(Object object) { //被代理类对象
         MyInvocationHandler myInvocationHandler = new MyInvocationHandler();
         myInvocationHandler.bind(object);
+        //生成代理对象
         Object proxyInstance = Proxy.newProxyInstance(object.getClass().getClassLoader(), object.getClass().getInterfaces(), myInvocationHandler);
         return proxyInstance;
     }
