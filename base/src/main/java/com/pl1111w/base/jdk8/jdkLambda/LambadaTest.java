@@ -36,7 +36,7 @@ public class LambadaTest {
         Runnable runnable2 = () -> System.out.println("run....");
 
         //带一个参数, 参数括号可以省略
-        Consumer<String> consumer = param -> System.out.println(param);
+        Consumer<String> consumer = System.out::println;
         consumer.accept("this is data");
 
         //带2个参数参数括号不能省略 有反回值

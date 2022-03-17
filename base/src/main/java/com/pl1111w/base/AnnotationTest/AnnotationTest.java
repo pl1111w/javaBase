@@ -1,7 +1,5 @@
 package com.pl1111w.base.AnnotationTest;
 
-import jdk.jfr.Registered;
-
 import java.lang.annotation.Annotation;
 
 /**
