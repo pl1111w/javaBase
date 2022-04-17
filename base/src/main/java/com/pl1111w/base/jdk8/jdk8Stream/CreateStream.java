@@ -29,6 +29,18 @@ public class CreateStream {
         new Random().ints().limit(10);
         //defined stream
         Random random = new Random(5);
-        Stream.generate(()-> random.nextInt()).limit(10);
+        Stream.generate(random::nextInt).limit(10);
+
+        int[] numbers = new int[]{1, 2, 3,};
+        //map 中间操作（返回stream）
+        //sum 终止操作
+        int sum = IntStream.of(numbers).map(i -> i * 2).sum();
+        int sum2 = IntStream.of(numbers).map(CreateStream::multiple).sum();
+        System.out.println(sum);
+        System.out.println(sum2);
+    }
+
+    public static int multiple(int num) {
+        return num * 2;
     }
 }
