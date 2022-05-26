@@ -25,12 +25,14 @@ public class TestAbstract {
                 return "sleep";
             }
         };
-        System.out.println(animal.eat());
-        System.out.println(animal.sleep());
-        System.out.println(animal.breath());
+        Animal animal2 = new Fish("BLACK FISH"); //匿名子类对象 可能是fish,person;
+        System.out.println(animal2.eat());
+        System.out.println(animal2.sleep());
+        System.out.println(animal2.breath());
 
        People people = new People();
        people.eat(new Fish("鱿鱼"));//匿名对象
        people.eat();
+
     }
 }
