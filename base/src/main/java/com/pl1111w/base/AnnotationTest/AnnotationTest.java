@@ -1,6 +1,7 @@
 package com.pl1111w.base.AnnotationTest;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 
 /**
  * @title: pl1111w
@@ -25,9 +26,11 @@ class AnnotationChildTest extends AnnotationTest{
         super(number);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoSuchFieldException {
          Class cla = AnnotationChildTest.class;
-         Annotation annotations[] = cla.getAnnotations();
+        Field declaredField = cla.getDeclaredField("number");
+        Annotation[] declaredFieldAnnotations = declaredField.getAnnotations();
+        Annotation annotations[] = cla.getAnnotations();
          for(Annotation annotation:annotations){
              System.out.println(annotation.toString());
          }
