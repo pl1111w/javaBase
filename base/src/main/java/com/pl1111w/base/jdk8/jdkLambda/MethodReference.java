@@ -21,16 +21,18 @@ public class MethodReference {
         Consumer<String> consumer2 = System.out::println;
         consumer2.accept("Consumer<T t>的参数在Print<T t >实现了可以使用方法引用");
 
-        Supplier<String> supplier = () -> {
-            return CITI.getBankName();
-        };
-        supplier.get();
-
-        //"Supplier<String>的参数在getBankName方法实现了也是String 可以使用方法引用")
+        //Supplier<String>的参数在getBankName方法实现了也是String 可以使用方法引用)
         Supplier<String> supplier2 = CITI::getBankName;
         System.out.println(supplier2.get());
 
-        Supplier<Player> supplierPlayer = ()->new Player("ABC",20);
-        supplierPlayer.get();
+        Supplier<Player> supplierPlayer = () -> new Player("ABC", 20);
+        Player player = supplierPlayer.get();
+        System.out.println(player);
+
+        //构造器与类名相同
+        Supplier<Player> supplierPlayer2 = Player::new;
+        Player player2 = supplierPlayer2.get();
+        System.out.println(player2);
+
     }
 }

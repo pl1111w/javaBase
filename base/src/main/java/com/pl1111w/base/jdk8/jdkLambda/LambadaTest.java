@@ -1,13 +1,7 @@
 package com.pl1111w.base.jdk8.jdkLambda;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
-import java.util.List;
 import java.util.function.Consumer;
-import java.util.function.Predicate;
 
 /**
  * @title: pl1111w
@@ -43,30 +37,12 @@ public class LambadaTest {
         Comparator<Integer> comparator = (o1, o2) -> {
             return Integer.compare(o1, o2);
         };
-
+        Comparator<Integer> comparator2 = Integer::compare;
         int compare = comparator.compare(12, 13);
         System.out.println(compare);
 
-        happyTime(500.0, RMB -> System.out.println("消费:" + RMB + "元"));
 
-        List<String> stringList = Arrays.asList("Abby", "Sham", "Rose", "Jack");
-        //省略返回值 ， {}
-        List<String> list = judgeContainCharOfA(stringList, data -> data.contains("a"));
-        System.out.println(list);
     }
 
 
-    public static void happyTime(Double money, Consumer<Double> consumer) {
-        consumer.accept(money);
-    }
-
-    public static List<String> judgeContainCharOfA(List<String> list, Predicate<String> predicate) {
-        ArrayList resultList = new ArrayList();
-        for (String s : list) {
-            if (predicate.test(s)) {
-                resultList.add(s);
-            }
-        }
-        return resultList;
-    }
 }
