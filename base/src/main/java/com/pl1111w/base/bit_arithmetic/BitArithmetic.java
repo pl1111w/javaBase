@@ -1,6 +1,6 @@
-package com.pl1111w.base.datatype;
+package com.pl1111w.base.bit_arithmetic;
 
-public class MathematicalOperation {
+public class BitArithmetic {
 
     public static void main(String[] args) {
        int move = 2;
@@ -22,7 +22,9 @@ public class MathematicalOperation {
         System.out.println(Integer.toBinaryString(-value>>move));//-3/2/2=-1
         System.out.println(Integer.toBinaryString(-1));//-3/2/2=-1
         System.out.println(Integer.toBinaryString(-3));//-3/2/2=-1
-        // -3 补码 1111 1101 >>2 1111 1111 结果为-1
+        // -3 补码 正数的补码就是其本身；
+        //负数的补码是在其原码的基础上，符号位不变，其余各位取反，最后+1。(也即在反码的基础上+1)
+        // 1111 1101 >>2 1111 1111 结果为-1
 
         /**
          * >>>无符号位右移[负数操作补码]

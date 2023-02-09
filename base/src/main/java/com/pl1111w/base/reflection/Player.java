@@ -12,6 +12,10 @@ public class Player {
     String name;
     int age;
 
+    public Player() {
+
+    }
+
     private void showPrivateMethod(){
         System.out.println("this is private method");
     }
