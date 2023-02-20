@@ -1,4 +1,4 @@
-package com.pl1111w.base.jdk8.jdk8Stream;
+package com.pl1111w.base.jdk8.jdk8Stream.entity;
 
 import java.util.*;
 

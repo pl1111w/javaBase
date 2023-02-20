@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -16,7 +17,7 @@ import java.util.stream.Stream;
 public class CreateStream {
 
     public static void main(String[] args) {
-        //Stream of List
+        //Stream of Collection<E> -- List<E> extends Collection<E>
         List<String> list = new ArrayList<>();
         list.stream();
         list.parallelStream();
@@ -25,6 +26,7 @@ public class CreateStream {
         //Stream of number
         IntStream.of(3, 4, 7);
         IntStream.rangeClosed(1, 10);
+        DoubleStream.of(1.2,1.3);
         //Stream of random
         new Random().ints().limit(10);
         //defined stream

@@ -1,7 +1,13 @@
 package com.pl1111w.base.jdk8.jdk8Stream;
 
+import com.pl1111w.base.jdk8.jdk8Stream.entity.Address;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -15,9 +21,11 @@ public class MiddleStream {
         List<String> cityListOne = new ArrayList<>();
         cityListOne.add("郑州");
         cityListOne.add("濮阳");
+        cityListOne.add("驻马店");
         List<String> cityListTwo = new ArrayList<>();
         cityListTwo.add("廊坊");
         cityListTwo.add("邢台");
+        cityListTwo.add("石家庄");
         List<String> cityListThree = new ArrayList<>();
         cityListThree.add("大同");
         cityListThree.add("太原");
@@ -41,30 +49,48 @@ public class MiddleStream {
         addressFour.setProvince("江西");
         addressFour.setCityList(cityListFour);
 
-        List<Address> addresseList = new ArrayList<>();
-        addresseList.add(addressOne);
-        addresseList.add(addressTwo);
-        addresseList.add(addressThree);
-        addresseList.add(addressFour);
+        List<Address> addressList = new ArrayList<>();
+        addressList.add(addressOne);
+        addressList.add(addressTwo);
+        addressList.add(addressThree);
+        addressList.add(addressFour);
 
-        //使用map输出所有的城市名称
-        addresseList.stream()
-                .map(a -> a.getCityList())
-                .forEach(cityList->{ cityList.forEach(city -> System.out.print(city));
+        //使用map：将一种流数据转换为另外一种流 输出所有的城市名称 将T类型转为R类型 Address->String
+        addressList.stream()
+                .map(Address::getCityList)
+                .forEach(cityList -> {
+                    cityList.forEach(System.out::print);
                 });
-        System.out.println("");
-        //使用flatMap输出所有城市名称
-        addresseList.stream()
+        System.out.println();
+        //使用flatMap输出所有城市名称 将T类型转为Stream类型
+        addressList.stream()
                 .flatMap(a -> a.getCityList().stream())
-                .forEach(city -> System.out.print(city));
+                .forEach(System.out::print);
 
 
         String value = "my name is jordan";
         //中间操作debug foreach终止操作
         Stream<String> peek = Stream.of(value.split(" ")).peek(System.out::println);
 
-        Stream<String> sorted = Stream.of(value.split(" ")).sorted();
+        //limit 取前3个
+        System.out.println("********limit*****");
         Stream<String> limit = Stream.of(value.split(" ")).limit(3);
+        limit.forEach(System.out::println);
+        //skip 跳过前面3个
+        System.out.println("---------skip------");
+        String name[] = new String[]{"my", "name", " is", "jordan"};
+        Stream<String> skip = Stream.of(name).skip(3);
+        skip.forEach(System.out::print);
+        //sorted 排序 排序的数据需要重写compareTo
+        Stream<String> sorted = Stream.of(name).sorted();
+        //distinct 去重
+        Stream<String> distinct = Stream.of(name).distinct();
+        //filter 过滤
         Stream<String> filterStream = Stream.of(value.split(" ")).filter(s -> s.contains("m"));
+        //contact 合并
+        Stream<String> contactList = Stream.concat(distinct, filterStream);
+        //mapToInt mapToDouble
+        IntStream intStream = Arrays.stream(new Integer[]{1, 2, 3}).mapToInt(Integer::intValue);
+        DoubleStream doubleStream = Arrays.stream(new Integer[]{1, 2, 3}).mapToDouble(Double::valueOf);
     }
 }
