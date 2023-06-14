@@ -1,12 +1,9 @@
-package com.pl1111w.base.jvm.stringType;
-
-import jdk.swing.interop.SwingInterOpUtils;
-
-import java.util.Locale;
+package com.pl1111w.base.jvm.stringTable;
 
 /**
  * @title: pl1111w
- * @description: 常量与常量拼接的结果在常量池中只有一份，常量与变量拼接的结果在堆中，intern()方法指向常量池中的常量
+ * @description: 常量与常量拼接的结果在常量池中只有一份，常量与变量拼接的结果在堆中，
+ * intern()方法 :指向常量池中的常量
  * @author: Kris
  * @date 2021/10/26 20:14
  */

@@ -1,4 +1,4 @@
-package com.pl1111w.base.jvm.outOfMemory;
+package com.pl1111w.base.jvm.stack;
 
 /**
  * @title: pl1111w

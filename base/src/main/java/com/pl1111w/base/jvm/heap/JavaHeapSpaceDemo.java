@@ -1,6 +1,4 @@
-package com.pl1111w.base.jvm.outOfMemory;
-
-import java.util.Random;
+package com.pl1111w.base.jvm.heap;
 
 /**
  * @title: pl1111w
