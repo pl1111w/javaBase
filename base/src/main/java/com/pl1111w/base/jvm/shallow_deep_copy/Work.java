@@ -1,4 +1,4 @@
-package com.pl1111w.base.jvm.shallow_deep_copy;
+package jvm.shallow_deep_copy;
 
 /**
  * @title: pl1111w

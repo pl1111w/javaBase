@@ -1,4 +1,4 @@
-package com.pl1111w.base.collectionTest;
+package mapTest;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,6 +16,8 @@ public class HashMapTest {
         map.put("1","one");
         map.put("2","two");
         map.put("3","three");
+        String v = map.put("3", "san");
+        System.out.println(v);
         System.out.println(map);
         System.out.println(map.keySet());
         for(Map.Entry entry:map.entrySet()){

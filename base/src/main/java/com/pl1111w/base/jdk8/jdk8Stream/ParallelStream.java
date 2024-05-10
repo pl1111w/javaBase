@@ -1,4 +1,4 @@
-package com.pl1111w.base.jdk8.jdk8Stream;
+package jdk8.jdk8Stream;
 
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ForkJoinTask;

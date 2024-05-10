@@ -1,4 +1,4 @@
-package com.pl1111w.base.jvm.stack;
+package jvm.stack;
 
 /**
  * @title: pl1111w

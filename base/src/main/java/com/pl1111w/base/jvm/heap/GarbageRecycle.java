@@ -1,4 +1,4 @@
-package com.pl1111w.base.jvm.heap;
+package jvm.heap;
 
 /**
  * @title: pl1111w

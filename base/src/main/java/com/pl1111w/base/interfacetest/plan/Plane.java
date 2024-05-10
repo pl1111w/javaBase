@@ -1,6 +1,6 @@
-package com.pl1111w.base.interfacetest.plan;
+package interfacetest.plan;
 
-import com.pl1111w.base.interfacetest.Vehicle;
+import interfacetest.Vehicle;
 
 /**
  * @title: pl1111w

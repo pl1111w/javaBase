@@ -1,4 +1,4 @@
-package com.pl1111w.base.reflection;
+package reflection;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

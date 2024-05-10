@@ -1,4 +1,4 @@
-package com.pl1111w.base.interfacetest.proxyTest;
+package interfacetest.proxyTest;
 
 /**
  * @title: pl1111w

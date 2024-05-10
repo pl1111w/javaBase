@@ -1,4 +1,4 @@
-package com.pl1111w.base.collectionTest.myself;
+package mapTest.myself;
 
 import java.util.Map;
 

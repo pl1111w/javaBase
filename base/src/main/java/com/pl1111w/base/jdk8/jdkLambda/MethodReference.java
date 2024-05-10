@@ -1,11 +1,11 @@
-package com.pl1111w.base.jdk8.jdkLambda;
+package jdk8.jdkLambda;
 
-import com.pl1111w.base.reflection.Player;
+import reflection.Player;
 
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-import static com.pl1111w.base.finalclass.BankEnum.CITI;
+import static finalclass.BankEnum.CITI;
 
 /**
  * @title: pl1111w

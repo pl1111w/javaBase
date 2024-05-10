@@ -1,4 +1,4 @@
-package com.pl1111w.base.collectionTest;
+package mapTest;
 
 /**
  * @title: pl1111w

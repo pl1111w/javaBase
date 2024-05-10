@@ -1,7 +1,7 @@
-package com.pl1111w.base.jdk8.jdk8Stream;
+package jdk8.jdk8Stream;
 
-import com.pl1111w.base.jdk8.jdk8Stream.entity.Employee;
-import com.pl1111w.base.reflection.Player;
+import jdk8.jdk8Stream.entity.Employee;
+import reflection.Player;
 
 import java.util.ArrayList;
 import java.util.List;

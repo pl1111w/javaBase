@@ -1,4 +1,4 @@
-package com.pl1111w.base.jvm.heap;
+package jvm.heap;
 
 import java.util.ArrayList;
 import java.util.List;

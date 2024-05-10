@@ -1,4 +1,4 @@
-package com.pl1111w.base.jvm.method;
+package jvm.method;
 
 /**
  * @title: pl1111w

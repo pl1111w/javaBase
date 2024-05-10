@@ -1,4 +1,4 @@
-package com.pl1111w.base.jvm.reference;
+package jvm.reference;
 
 import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;

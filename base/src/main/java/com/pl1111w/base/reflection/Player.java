@@ -1,4 +1,4 @@
-package com.pl1111w.base.reflection;
+package reflection;
 
 /**
  * @title: pl1111w

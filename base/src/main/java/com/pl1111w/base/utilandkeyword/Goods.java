@@ -1,4 +1,4 @@
-package com.pl1111w.base.utilandkeyword;
+package utilandkeyword;
 
 /**
  * @title: pl1111w

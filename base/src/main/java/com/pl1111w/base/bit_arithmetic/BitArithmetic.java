@@ -1,4 +1,4 @@
-package com.pl1111w.base.bit_arithmetic;
+package bit_arithmetic;
 
 public class BitArithmetic {
 

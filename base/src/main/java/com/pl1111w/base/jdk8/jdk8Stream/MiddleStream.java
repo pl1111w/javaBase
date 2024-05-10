@@ -1,6 +1,6 @@
-package com.pl1111w.base.jdk8.jdk8Stream;
+package jdk8.jdk8Stream;
 
-import com.pl1111w.base.jdk8.jdk8Stream.entity.Address;
+import jdk8.jdk8Stream.entity.Address;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,6 +13,7 @@ import java.util.stream.Stream;
 /**
  * @title: pl1111w
  * @description: middle status of stream
+ * [Filter Map FlatMap Peek Distinct Sort Limit]
  * @author: Kris
  * @date 2022/3/21 15:51
  */
@@ -69,7 +70,7 @@ public class MiddleStream {
 
 
         String value = "my name is jordan";
-        //中间操作debug foreach终止操作
+        //中间操作debug 类似foreach 不会有打印
         Stream<String> peek = Stream.of(value.split(" ")).peek(System.out::println);
 
         //limit 取前3个

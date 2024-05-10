@@ -1,8 +1,8 @@
-package com.pl1111w.base.interfacetest.plan;
+package interfacetest.plan;
 
-import com.pl1111w.base.interfacetest.plan.CustomerPlan;
-import com.pl1111w.base.interfacetest.plan.FightPlan;
-import com.pl1111w.base.interfacetest.plan.Plane;
+import interfacetest.plan.CustomerPlan;
+import interfacetest.plan.FightPlan;
+import interfacetest.plan.Plane;
 
 /**
  * @title: pl1111w

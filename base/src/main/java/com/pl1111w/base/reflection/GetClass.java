@@ -1,4 +1,4 @@
-package com.pl1111w.base.reflection;
+package reflection;
 
 /**
  * @title: pl1111w
@@ -13,9 +13,9 @@ public class GetClass {
         Class aClass = getClass.getClass();
 
         Class aClass1 = GetClass.class;
-        Class aClass2 = Class.forName("com.pl1111w.base.reflection.GetClass");
+        Class aClass2 = Class.forName("reflection.GetClass");
         ClassLoader classLoader = GetClass.class.getClassLoader();
-        Class aClass3 = classLoader.loadClass("com.pl1111w.base.reflection.GetClass");
+        Class aClass3 = classLoader.loadClass("reflection.GetClass");
         System.out.println(aClass==aClass1);
         System.out.println(aClass3==aClass1);
         System.out.println(aClass3==aClass2);

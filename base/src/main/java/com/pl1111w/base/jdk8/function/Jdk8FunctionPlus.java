@@ -1,4 +1,4 @@
-package com.pl1111w.base.jdk8.function;
+package jdk8.function;
 
 import java.text.DecimalFormat;
 import java.util.function.Function;

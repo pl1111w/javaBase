@@ -1,10 +1,10 @@
-package com.pl1111w.base.jdk8.function;
+package jdk8.function;
 
 import java.text.DecimalFormat;
 
 /**
  * @title: pl1111w
- * @description:
+ * @description: 函数式接口有且只有一个抽象方法
  * @author: Kris
  * @date 2022/3/16 14:50
  */
@@ -19,7 +19,7 @@ public class Jdk8Function {
         System.out.println("My balance is:" + iMoneyTransfer.moneyTransfer(99999));
     }
 }
-
+@FunctionalInterface
 interface iMoneyTransfer{
     String moneyTransfer(double money);
 }

@@ -1,4 +1,4 @@
-package com.pl1111w.base.interfacetest.car;
+package interfacetest.car;
 
 /**
  * @title: pl1111w

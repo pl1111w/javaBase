@@ -1,4 +1,4 @@
-package com.pl1111w.base.interfacetest.plan;
+package interfacetest.plan;
 
 /**
  * @title: pl1111w

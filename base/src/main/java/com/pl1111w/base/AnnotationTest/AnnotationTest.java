@@ -1,4 +1,4 @@
-package com.pl1111w.base.AnnotationTest;
+package AnnotationTest;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
@@ -16,7 +16,7 @@ public class AnnotationTest {
 
     }
     @MyAnnotation
-    private int number;
+    public int number;
 }
 class AnnotationChildTest extends AnnotationTest{
 
@@ -28,8 +28,8 @@ class AnnotationChildTest extends AnnotationTest{
 
     public static void main(String[] args) throws NoSuchFieldException {
          Class cla = AnnotationChildTest.class;
-        Field declaredField = cla.getDeclaredField("number");
-        Annotation[] declaredFieldAnnotations = declaredField.getAnnotations();
+        Field field = cla.getField("number");
+        Annotation[] declaredFieldAnnotations = field.getAnnotations();
         Annotation annotations[] = cla.getAnnotations();
          for(Annotation annotation:annotations){
              System.out.println(annotation.toString());

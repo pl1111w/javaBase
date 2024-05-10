@@ -1,4 +1,4 @@
-package com.pl1111w.base.jdk8.jdkLambda;
+package jdk8.jdkLambda;
 
 import java.util.function.Consumer;
 

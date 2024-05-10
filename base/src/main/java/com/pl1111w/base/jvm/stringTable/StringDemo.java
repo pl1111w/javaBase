@@ -1,4 +1,4 @@
-package com.pl1111w.base.jvm.stringTable;
+package jvm.stringTable;
 
 /**
  * @title: pl1111w

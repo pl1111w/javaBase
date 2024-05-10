@@ -1,4 +1,4 @@
-package com.pl1111w.base.abstractclass;
+package abstractclass;
 
 /**
  * @title: pl1111w

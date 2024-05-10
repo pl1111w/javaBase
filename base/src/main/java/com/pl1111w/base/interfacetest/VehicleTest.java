@@ -1,10 +1,10 @@
-package com.pl1111w.base.interfacetest;
+package interfacetest;
 
-import com.pl1111w.base.interfacetest.car.AudiCar;
-import com.pl1111w.base.interfacetest.car.AudiFactory;
-import com.pl1111w.base.interfacetest.car.BMWCar;
-import com.pl1111w.base.interfacetest.plan.Plane;
-import com.pl1111w.base.interfacetest.plan.PlaneFactory;
+import interfacetest.car.AudiCar;
+import interfacetest.car.AudiFactory;
+import interfacetest.car.BMWCar;
+import interfacetest.plan.Plane;
+import interfacetest.plan.PlaneFactory;
 
 /**
  * @title: pl1111w

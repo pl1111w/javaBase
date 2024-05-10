@@ -1,4 +1,4 @@
-package com.pl1111w.base.finalclass;
+package finalclass;
 
 /**
  * @title: pl1111w

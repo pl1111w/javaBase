@@ -1,4 +1,4 @@
-package com.pl1111w.base.jdk8.jdk8Stream;
+package jdk8.jdk8Stream;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -34,10 +34,9 @@ public class CreateStream {
         Stream.generate(random::nextInt).limit(10);
 
         int[] numbers = new int[]{1, 2, 3,};
-        //map 中间操作（返回stream）
-        //sum 终止操作
-        int sum = IntStream.of(numbers).map(i -> i * 2).sum();
-        int sum2 = IntStream.of(numbers).map(CreateStream::multiple).sum();
+        // Stream.of(T values)
+        int sum = IntStream.of(numbers).map(i -> i * 2).sum();//map 中间操作（返回stream）
+        int sum2 = IntStream.of(numbers).map(CreateStream::multiple).sum(); //sum 终止操作
         System.out.println(sum);
         System.out.println(sum2);
     }

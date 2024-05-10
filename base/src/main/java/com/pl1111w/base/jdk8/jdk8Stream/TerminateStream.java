@@ -1,4 +1,4 @@
-package com.pl1111w.base.jdk8.jdk8Stream;
+package jdk8.jdk8Stream;
 
 import java.util.Comparator;
 import java.util.List;
@@ -9,6 +9,7 @@ import java.util.stream.Stream;
 /**
  * @title: pl1111w
  * @description: stream of termination
+ * [Count ForEach Collect Reduce Min/Max]
  * @author: Kris
  * @date 2022/3/21 16:35
  */

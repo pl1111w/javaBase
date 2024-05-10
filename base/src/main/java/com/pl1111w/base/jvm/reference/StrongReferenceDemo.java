@@ -1,4 +1,4 @@
-package com.pl1111w.base.jvm.reference;
+package jvm.reference;
 
 /**
  * @title: pl1111w

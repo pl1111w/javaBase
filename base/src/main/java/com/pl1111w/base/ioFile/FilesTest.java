@@ -1,4 +1,4 @@
-package com.pl1111w.base.ioFile;
+package ioFile;
 
 import java.io.File;
 import java.io.IOException;

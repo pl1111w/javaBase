@@ -1,4 +1,4 @@
-package com.pl1111w.base.dynamicProxy.staticProxy;
+package dynamicProxy.staticProxy;
 
 /**
  * @title: pl1111w

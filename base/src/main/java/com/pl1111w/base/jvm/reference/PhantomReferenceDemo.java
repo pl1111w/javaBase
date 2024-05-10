@@ -1,4 +1,4 @@
-package com.pl1111w.base.jvm.reference;
+package jvm.reference;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.ReferenceQueue;
@@ -20,7 +20,7 @@ public class PhantomReferenceDemo {
         ReferenceQueue queue = new ReferenceQueue();
         PhantomReference<Object> phantomReference = new PhantomReference<>(object,queue);
 
-        System.out.println(phantomReference.get());
+        System.out.println(phantomReference.get());//get总是返回null
         System.out.println(queue.poll());
         object=null;
         System.gc();

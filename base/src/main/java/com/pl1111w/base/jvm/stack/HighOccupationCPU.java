@@ -1,4 +1,4 @@
-package com.pl1111w.base.jvm.stack;
+package jvm.stack;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
