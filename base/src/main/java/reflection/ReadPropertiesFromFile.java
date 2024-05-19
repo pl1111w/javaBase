@@ -6,18 +6,18 @@ import java.util.Properties;
 
 /**
  * @title: pl1111w
- * @description:
+ * @description: 反射获取配置文件信息
  * @author: Kris
  * @date 2021/12/26 16:02
  */
-public class ReadProperties {
+public class ReadPropertiesFromFile {
 
     public static void main(String[] args) throws IOException {
 
         Properties properties = new Properties();
 
-        ClassLoader loader = ReadProperties.class.getClassLoader();
-        InputStream inputStream = loader.getResourceAsStream("config.properties");
+        ClassLoader loader = ReadPropertiesFromFile.class.getClassLoader();
+        InputStream inputStream = loader.getResourceAsStream("reflection/config.properties");
 
         properties.load(inputStream);
 

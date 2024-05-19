@@ -13,25 +13,26 @@ import java.lang.reflect.Method;
 public class ReflectionTest {
 
     public static void main(String[] args) throws Exception {
-        Player player = new Player("subingtian",33);
-        player.name="guailing";
-
-        player.showPublicMethod();
+        Player player = new Player("su_bing_tian",33);
+        player.name="gu_ai_ling";
         //外部对象不能修改私有属性，不能调用私有方法、创建私有构造器
+        System.out.println(player.showPublicMethod());
 
-        System.out.println("reflection********************");
+
+        System.out.println("************reflection**************");
         Class clazz = Player.class;
         Constructor constructor = clazz.getDeclaredConstructor(int.class,String.class,int.class);
         constructor.setAccessible(true);
-        Object object = constructor.newInstance(180,"zhuTing",29);
-        Player pla = (Player)object;
-        System.out.println(pla);
+        Object object = constructor.newInstance(190,"zhuTing",29);
+        player = (Player)object;
+        System.out.println(player);
+
         Field field = clazz.getDeclaredField("id");
         field.setAccessible(true);
-        field.set(pla,190);
-        System.out.println(pla);
+        field.set(player,198);
+        System.out.println(player);
         Method privateMethod = clazz.getDeclaredMethod("showPrivateMethod");
         privateMethod.setAccessible(true);
-        privateMethod.invoke(pla);
+        privateMethod.invoke(player);
     }
 }
