@@ -8,7 +8,7 @@ package dynamicProxy.dynamic;
  */
 interface Animals {
 
-    void isEatMeat();
+    void isEatMeat(String name);
 
     void isPeopleFriend();
 

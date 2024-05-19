@@ -6,10 +6,10 @@ package dynamicProxy.dynamic;
  * @author: Kris
  * @date 2021/12/28 18:05
  */
-public class Dog implements Animals{
+public class Dog implements Animals {
     @Override
-    public void isEatMeat() {
-        System.out.println("dog is eat meat");
+    public void isEatMeat(String name) {
+        System.out.println("dog is eat " + name);
     }
 
     @Override
